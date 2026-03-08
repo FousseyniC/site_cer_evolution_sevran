@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CER EVOLUTION - Formations</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#dc2626', secondary: '#1f2937' } }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-primary">
+                <img src="logo.png" alt="CER EVOLUTION logo" class="h-12 w-auto">
+                <span>CER EVOLUTION</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Accueil</a>
+                <a href="formations.html" class="text-primary font-medium">Formations</a>
+                <a href="tarifs.html" class="text-gray-700 hover:text-primary font-medium">Tarifs</a>
+                <a href="planning.html" class="text-gray-700 hover:text-primary font-medium">Planning</a>
+                <a href="contact.html" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-gray-100 py-12">
+            <div class="container mx-auto px-4 text-center">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+                    <img src="logo.png" alt="CER EVOLUTION logo" class="h-16 w-auto">
+                    <h1 class="text-4xl font-bold text-gray-800">Nos Formations</h1>
+                </div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Du code de la route au permis probatoire, nous vous accompagnons à chaque étape.</p>
+            </div>
+        </section>
+
+        <section class="py-16 container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="car" class="w-8 h-8"></i></div>
+                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">20h minimum</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Permis B</h3>
+                        <p class="text-gray-600 mb-6">Formation traditionnelle à la conduite (Boîte Manuelle).</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Forfait code 4 mois</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 20h de conduite</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Frais administratifs inclus</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Accompagnement examen</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">À partir de 1090€</span>
+                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="users" class="w-8 h-8"></i></div>
+                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">Dès 15 ans</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Conduite Accompagnée (AAC)</h3>
+                        <p class="text-gray-600 mb-6">Apprentissage anticipé dès 15 ans (Formule Traditionnelle).</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Formation initiale 20h</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Rdv pédagogiques inclus</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Meilleur taux de réussite</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Assurance jeune conducteur réduite</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">À partir de 1290€</span>
+                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="zap" class="w-8 h-8"></i></div>
+                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">13h minimum</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Boîte Automatique</h3>
+                        <p class="text-gray-600 mb-6">Apprentissage simplifié et plus rapide (Formule B78).</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 13h de conduite minimum</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Formation plus rapide</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Possibilité passerelle vers manuel</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Moins de stress</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">À partir de 790€</span>
+                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="activity" class="w-8 h-8"></i></div>
+                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">20h minimum</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Permis Moto A1/A2</h3>
+                        <p class="text-gray-600 mb-6">Formation motocycles.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Piste privée</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 20h de conduite</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Passerelle A2 vers A possible</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">À partir de 790€</span>
+                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold mb-2">CER EVOLUTION</p>
+            <p class="text-sm text-gray-400 mb-1">Gare de Sevran Beaudottes, 93270 Sevran</p>
+            <p class="text-sm text-gray-400 mb-4">+33 (0)1 88 59 07 46 | cer.evolution93@gmail.com</p>
+            <p class="text-xs text-gray-500">© 2024 CER Evolution. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

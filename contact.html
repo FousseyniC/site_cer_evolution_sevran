@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CER EVOLUTION - Contact & Accès</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#dc2626', secondary: '#1f2937' } }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-primary">
+                <img src="logo.png" alt="CER EVOLUTION logo" class="h-12 w-auto">
+                <span>CER EVOLUTION</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Accueil</a>
+                <a href="formations.html" class="text-gray-700 hover:text-primary font-medium">Formations</a>
+                <a href="tarifs.html" class="text-gray-700 hover:text-primary font-medium">Tarifs</a>
+                <a href="planning.html" class="text-gray-700 hover:text-primary font-medium">Planning</a>
+                <a href="contact.html" class="text-primary font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16 container mx-auto px-4">
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden mb-12">
+            <div class="bg-primary p-6 text-white flex flex-col sm:flex-row items-center justify-center gap-6">
+                <img src="logo.png" alt="CER EVOLUTION logo" class="h-16 w-auto bg-white p-2 rounded-lg">
+                <div class="text-center sm:text-left">
+                    <h1 class="text-3xl font-bold mb-2">Contactez-nous</h1>
+                    <p>Nous sommes à votre disposition pour toute information.</p>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="w-16 h-16 bg-red-50 text-primary rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="phone" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Téléphone</h3>
+                        <p class="text-gray-700 font-medium">+33 (0)1 88 59 07 46</p>
+                    </div>
+
+                    <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="w-16 h-16 bg-red-50 text-primary rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="mail" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Email</h3>
+                        <p class="text-gray-700 font-medium">cer.evolution93@gmail.com</p>
+                    </div>
+
+                    <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="w-16 h-16 bg-red-50 text-primary rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="map-pin" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Adresse</h3>
+                        <p class="text-gray-700 font-medium">Gare de Sevran Beaudottes</p>
+                        <p class="text-gray-500 text-sm">93270 Sevran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6 text-center border-b bg-gray-50">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center justify-center gap-2">
+                    <i data-lucide="map" class="text-primary w-6 h-6"></i> Où nous trouver ?
+                </h2>
+            </div>
+            <div class="w-full h-[450px]">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://maps.google.com/maps?q=CER%20Evolution,%20Gare%20de%20Sevran%20Beaudottes,%2093270%20Sevran&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Carte de CER Evolution Sevran"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-secondary text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold mb-2">CER EVOLUTION</p>
+            <p class="text-sm text-gray-400 mb-1">Gare de Sevran Beaudottes, 93270 Sevran</p>
+            <p class="text-sm text-gray-400 mb-4">+33 (0)1 88 59 07 46 | cer.evolution93@gmail.com</p>
+            <p class="text-xs text-gray-500">© 2024 CER Evolution. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
