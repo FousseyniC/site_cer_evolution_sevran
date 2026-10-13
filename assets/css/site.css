@@ -1,0 +1,96 @@
+/* Styles complémentaires à Tailwind (motifs de marque + accessibilité). */
+
+html {
+  scroll-padding-top: 6rem; /* les ancres ne passent pas sous l'en-tête collant */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus clavier toujours visible */
+:focus-visible {
+  outline: 3px solid #d0363c;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+.on-dark :focus-visible,
+.on-dark:focus-visible {
+  outline-color: #ff6b70;
+}
+
+/* Lien d'évitement */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: #2d2d2d;
+  color: #fff;
+  font-weight: 600;
+  transition: top 150ms ease-out;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Bande oblique reprise du logo CER */
+.hero-stripe,
+.page-stripe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background: #d0363c;
+  clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
+}
+.hero-stripe {
+  width: 55%;
+  opacity: 0.18;
+}
+.hero-stripe::after,
+.page-stripe::after {
+  /* fin liseré blanc, comme sur le logo */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #2d2d2d;
+  clip-path: polygon(38% 0, 41% 0, 3% 100%, 0 100%);
+}
+.page-stripe {
+  width: 40%;
+  opacity: 0.18;
+}
+@media (min-width: 1024px) {
+  .hero-stripe {
+    width: 40%;
+    opacity: 1;
+  }
+  .page-stripe {
+    width: 26%;
+    opacity: 1;
+  }
+}
+
+/* Marquage routier (pointillés) pour le parcours en étapes */
+.road-line {
+  background-image: linear-gradient(to right, #d6d3cf 55%, transparent 0);
+  background-size: 18px 3px;
+  background-repeat: repeat-x;
+  height: 3px;
+}
+
+/* Respect des préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
