@@ -3,148 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CER EVOLUTION - Formations</title>
-    
+    <title>Formations – CER Evolution Sevran</title>
+    <meta name="description" content="Permis B, conduite accompagnée (AAC), boîte automatique et permis moto A1/A2 à Sevran : découvrez les formations de CER Evolution.">
+    <meta name="theme-color" content="#2d2d2d">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Formations – CER Evolution Sevran">
+    <meta property="og:description" content="Permis B, conduite accompagnée (AAC), boîte automatique et permis moto A1/A2 à Sevran : découvrez les formations de CER Evolution.">
+    <meta property="og:image" content="logo.png">
     <link rel="icon" type="image/png" href="logo.png">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: { colors: { primary: '#dc2626', secondary: '#1f2937' } }
-            }
-        }
-    </script>
-</head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 text-2xl font-bold text-primary">
-                <img src="logo.png" alt="CER EVOLUTION logo" class="h-12 w-auto">
-                <span>CER EVOLUTION</span>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="bg-surface font-sans text-ink flex flex-col min-h-screen">
+
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
+        <div class="mx-auto max-w-site px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="CER Evolution Sevran, retour à l'accueil">
+                <img src="logo.png" alt="" width="364" height="120" class="h-9 md:h-11 w-auto">
+                <span class="hidden sm:block border-l border-black/10 pl-3 leading-tight">
+                    <span class="block text-sm font-extrabold tracking-[0.12em] text-ink">EVOLUTION</span>
+                    <span class="block text-xs font-medium text-ink-500">Auto-école · Sevran</span>
+                </span>
             </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Accueil</a>
-                <a href="formations.html" class="text-primary font-medium">Formations</a>
-                <a href="tarifs.html" class="text-gray-700 hover:text-primary font-medium">Tarifs</a>
-                <a href="planning.html" class="text-gray-700 hover:text-primary font-medium">Planning</a>
-                <a href="contact.html" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+
+            <nav aria-label="Navigation principale" class="hidden md:block">
+                <ul class="flex items-center gap-1">
+                    <li><a href="index.html" class="block px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-ink-700 hover:text-brand-700 hover:bg-brand-50">Accueil</a></li>
+                    <li><a href="formations.html" aria-current="page" class="block px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-brand-700 bg-brand-50">Formations</a></li>
+                    <li><a href="tarifs.html" class="block px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-ink-700 hover:text-brand-700 hover:bg-brand-50">Tarifs</a></li>
+                    <li><a href="planning.html" class="block px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-ink-700 hover:text-brand-700 hover:bg-brand-50">Planning</a></li>
+                    <li><a href="contact.html" class="block px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-ink-700 hover:text-brand-700 hover:bg-brand-50">Contact</a></li>
+                </ul>
             </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="tel:+33188590746" class="hidden lg:inline-flex items-center gap-2 h-11 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200">
+                    <i data-lucide="phone" class="w-4 h-4" aria-hidden="true"></i> 01 88 59 07 46
+                </a>
+                <button type="button" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl text-ink hover:bg-brand-50 transition-colors duration-200 cursor-pointer" aria-controls="menu-mobile" aria-expanded="false" data-menu-toggle>
+                    <span class="sr-only" data-label>Ouvrir le menu</span>
+                    <span data-icon-open aria-hidden="true"><i data-lucide="menu" class="w-6 h-6"></i></span>
+                    <span data-icon-close class="hidden" aria-hidden="true"><i data-lucide="x" class="w-6 h-6"></i></span>
+                </button>
+            </div>
         </div>
+
+        <nav id="menu-mobile" aria-label="Navigation mobile" class="md:hidden hidden border-t border-black/5 bg-white">
+            <ul class="mx-auto max-w-site px-4 py-3 space-y-1">
+                <li><a href="index.html" class="flex items-center min-h-[48px] px-4 rounded-xl text-lg font-semibold transition-colors duration-200 text-ink hover:bg-brand-50 hover:text-brand-700">Accueil</a></li>
+                <li><a href="formations.html" aria-current="page" class="flex items-center min-h-[48px] px-4 rounded-xl text-lg font-semibold transition-colors duration-200 text-brand-700 bg-brand-50">Formations</a></li>
+                <li><a href="tarifs.html" class="flex items-center min-h-[48px] px-4 rounded-xl text-lg font-semibold transition-colors duration-200 text-ink hover:bg-brand-50 hover:text-brand-700">Tarifs</a></li>
+                <li><a href="planning.html" class="flex items-center min-h-[48px] px-4 rounded-xl text-lg font-semibold transition-colors duration-200 text-ink hover:bg-brand-50 hover:text-brand-700">Planning</a></li>
+                <li><a href="contact.html" class="flex items-center min-h-[48px] px-4 rounded-xl text-lg font-semibold transition-colors duration-200 text-ink hover:bg-brand-50 hover:text-brand-700">Contact</a></li>
+            </ul>
+            <div class="px-4 pb-4">
+                <a href="tel:+33188590746" class="flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200">
+                    <i data-lucide="phone" class="w-5 h-5" aria-hidden="true"></i> Appeler le 01 88 59 07 46
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <main class="flex-grow">
-        <section class="bg-gray-100 py-12">
-            <div class="container mx-auto px-4 text-center">
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
-                    <img src="logo.png" alt="CER EVOLUTION logo" class="h-16 w-auto">
-                    <h1 class="text-4xl font-bold text-gray-800">Nos Formations</h1>
-                </div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Du code de la route au permis probatoire, nous vous accompagnons à chaque étape.</p>
+    <main id="contenu" class="flex-grow">
+
+        <section class="on-dark relative overflow-hidden bg-ink text-white">
+            <div class="page-stripe" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-site px-4 sm:px-6 py-14 md:py-20">
+                <nav aria-label="Fil d'Ariane" class="text-sm text-neutral-400">
+                    <ol class="flex items-center gap-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors duration-200">Accueil</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><span aria-current="page" class="text-neutral-200">Formations</span></li>
+                    </ol>
+                </nav>
+                <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">Nos formations</h1>
+                <p class="mt-4 max-w-2xl text-lg text-neutral-300">Du code de la route au permis probatoire, nous vous accompagnons à chaque étape.</p>
             </div>
         </section>
 
-        <section class="py-16 container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                    <div class="p-6 flex-1">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="car" class="w-8 h-8"></i></div>
-                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">20h minimum</span>
+        <section class="py-16 md:py-20">
+            <div class="mx-auto max-w-site px-4 sm:px-6">
+                <div class="grid gap-6 md:grid-cols-2">
+                <article id="permis-b" class="flex flex-col rounded-2xl bg-white ring-1 ring-black/5 overflow-hidden">
+                    <div class="p-7 flex-1">
+                        <div class="flex items-start justify-between gap-4">
+                            <span class="w-12 h-12 rounded-xl bg-ink text-white flex items-center justify-center"><i data-lucide="car" class="w-6 h-6" aria-hidden="true"></i></span>
+                            <span class="text-sm font-semibold text-ink-700 bg-surface ring-1 ring-black/5 rounded-full px-3 py-1">20h minimum</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2">Permis B</h3>
-                        <p class="text-gray-600 mb-6">Formation traditionnelle à la conduite (Boîte Manuelle).</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Forfait code 4 mois</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 20h de conduite</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Frais administratifs inclus</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Accompagnement examen</li>
+                        <h2 class="mt-6 text-2xl font-extrabold tracking-tight">Permis B</h2>
+                        <p class="mt-2 text-ink-500">Formation traditionnelle à la conduite (boîte manuelle).</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Forfait code 4 mois</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>20h de conduite</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Frais administratifs inclus</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Accompagnement examen</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-                        <span class="text-2xl font-bold text-primary">À partir de 1090€</span>
-                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    <div class="px-7 py-5 bg-surface border-t border-black/5 flex flex-wrap items-center justify-between gap-4">
+                        <p><span class="block text-xs text-ink-500">À partir de</span><span class="text-2xl font-extrabold text-brand-600">1090€</span></p>
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200 h-11 px-5">S'inscrire <i data-lucide="arrow-right" class="w-5 h-5" aria-hidden="true"></i></a>
                     </div>
-                </div>
-
-                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                    <div class="p-6 flex-1">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="users" class="w-8 h-8"></i></div>
-                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">Dès 15 ans</span>
+                </article>
+                <article id="conduite-accompagnee" class="flex flex-col rounded-2xl bg-white ring-1 ring-black/5 overflow-hidden">
+                    <div class="p-7 flex-1">
+                        <div class="flex items-start justify-between gap-4">
+                            <span class="w-12 h-12 rounded-xl bg-ink text-white flex items-center justify-center"><i data-lucide="users" class="w-6 h-6" aria-hidden="true"></i></span>
+                            <span class="text-sm font-semibold text-ink-700 bg-surface ring-1 ring-black/5 rounded-full px-3 py-1">Dès 15 ans</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2">Conduite Accompagnée (AAC)</h3>
-                        <p class="text-gray-600 mb-6">Apprentissage anticipé dès 15 ans (Formule Traditionnelle).</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Formation initiale 20h</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Rdv pédagogiques inclus</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Meilleur taux de réussite</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Assurance jeune conducteur réduite</li>
+                        <h2 class="mt-6 text-2xl font-extrabold tracking-tight">Conduite accompagnée (AAC)</h2>
+                        <p class="mt-2 text-ink-500">Apprentissage anticipé dès 15 ans (formule traditionnelle).</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Formation initiale 20h</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Rendez-vous pédagogiques inclus</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Meilleur taux de réussite</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Assurance jeune conducteur réduite</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-                        <span class="text-2xl font-bold text-primary">À partir de 1290€</span>
-                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    <div class="px-7 py-5 bg-surface border-t border-black/5 flex flex-wrap items-center justify-between gap-4">
+                        <p><span class="block text-xs text-ink-500">À partir de</span><span class="text-2xl font-extrabold text-brand-600">1290€</span></p>
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200 h-11 px-5">S'inscrire <i data-lucide="arrow-right" class="w-5 h-5" aria-hidden="true"></i></a>
                     </div>
-                </div>
-
-                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                    <div class="p-6 flex-1">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="zap" class="w-8 h-8"></i></div>
-                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">13h minimum</span>
+                </article>
+                <article id="boite-automatique" class="flex flex-col rounded-2xl bg-white ring-1 ring-black/5 overflow-hidden">
+                    <div class="p-7 flex-1">
+                        <div class="flex items-start justify-between gap-4">
+                            <span class="w-12 h-12 rounded-xl bg-ink text-white flex items-center justify-center"><i data-lucide="zap" class="w-6 h-6" aria-hidden="true"></i></span>
+                            <span class="text-sm font-semibold text-ink-700 bg-surface ring-1 ring-black/5 rounded-full px-3 py-1">13h minimum</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2">Boîte Automatique</h3>
-                        <p class="text-gray-600 mb-6">Apprentissage simplifié et plus rapide (Formule B78).</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 13h de conduite minimum</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Formation plus rapide</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Possibilité passerelle vers manuel</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Moins de stress</li>
+                        <h2 class="mt-6 text-2xl font-extrabold tracking-tight">Boîte automatique</h2>
+                        <p class="mt-2 text-ink-500">Apprentissage simplifié et plus rapide (formule B78).</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>13h de conduite minimum</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Formation plus rapide</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Possibilité de passerelle vers la boîte manuelle</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Moins de stress</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-                        <span class="text-2xl font-bold text-primary">À partir de 790€</span>
-                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    <div class="px-7 py-5 bg-surface border-t border-black/5 flex flex-wrap items-center justify-between gap-4">
+                        <p><span class="block text-xs text-ink-500">À partir de</span><span class="text-2xl font-extrabold text-brand-600">790€</span></p>
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200 h-11 px-5">S'inscrire <i data-lucide="arrow-right" class="w-5 h-5" aria-hidden="true"></i></a>
                     </div>
-                </div>
-
-                <div class="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                    <div class="p-6 flex-1">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="p-3 bg-red-50 text-primary rounded-lg"><i data-lucide="activity" class="w-8 h-8"></i></div>
-                            <span class="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-full">20h minimum</span>
+                </article>
+                <article id="moto" class="flex flex-col rounded-2xl bg-white ring-1 ring-black/5 overflow-hidden">
+                    <div class="p-7 flex-1">
+                        <div class="flex items-start justify-between gap-4">
+                            <span class="w-12 h-12 rounded-xl bg-ink text-white flex items-center justify-center"><i data-lucide="motorbike" class="w-6 h-6" aria-hidden="true"></i></span>
+                            <span class="text-sm font-semibold text-ink-700 bg-surface ring-1 ring-black/5 rounded-full px-3 py-1">20h minimum</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2">Permis Moto A1/A2</h3>
-                        <p class="text-gray-600 mb-6">Formation motocycles.</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Piste privée</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> 20h de conduite</li>
-                            <li class="flex items-center gap-2 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-primary"></i> Passerelle A2 vers A possible</li>
+                        <h2 class="mt-6 text-2xl font-extrabold tracking-tight">Permis moto A1/A2</h2>
+                        <p class="mt-2 text-ink-500">Formation motocycles.</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Piste privée</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>20h de conduite</span></li>
+                            <li class="flex items-start gap-3 text-ink-700"><i data-lucide="circle-check" class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" aria-hidden="true"></i><span>Passerelle A2 vers A possible</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-                        <span class="text-2xl font-bold text-primary">À partir de 790€</span>
-                        <a href="contact.html" class="text-primary font-medium hover:underline">S'inscrire</a>
+                    <div class="px-7 py-5 bg-surface border-t border-black/5 flex flex-wrap items-center justify-between gap-4">
+                        <p><span class="block text-xs text-ink-500">À partir de</span><span class="text-2xl font-extrabold text-brand-600">790€</span></p>
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-colors duration-200 h-11 px-5">S'inscrire <i data-lucide="arrow-right" class="w-5 h-5" aria-hidden="true"></i></a>
                     </div>
+                </article>
                 </div>
-
+                <p class="mt-10 text-center text-ink-500">Vous hésitez entre deux formules ? <a href="tarifs.html" class="font-semibold text-brand-700 hover:underline">Comparez les tarifs</a> ou <a href="contact.html" class="font-semibold text-brand-700 hover:underline">demandez conseil à l'agence</a>.</p>
             </div>
         </section>
     </main>
 
-    <footer class="bg-secondary text-white py-8 mt-auto">
-        <div class="container mx-auto px-4 text-center">
-            <p class="font-bold mb-2">CER EVOLUTION</p>
-            <p class="text-sm text-gray-400 mb-1">Gare de Sevran Beaudottes, 93270 Sevran</p>
-            <p class="text-sm text-gray-400 mb-4">+33 (0)1 88 59 07 46 | cer.evolutionsevran@gmail.com</p>
-            <p class="text-xs text-gray-500">© 2024 CER Evolution. Tous droits réservés.</p>
+    <footer class="on-dark bg-ink-900 text-neutral-300">
+        <div class="mx-auto max-w-site px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-3">
+            <div>
+                <a href="index.html" class="inline-block bg-white rounded-xl px-3 py-2" aria-label="CER Evolution Sevran, retour à l'accueil">
+                    <img src="logo.png" alt="" width="364" height="120" class="h-10 w-auto">
+                </a>
+                <p class="mt-4 max-w-xs text-sm leading-relaxed text-neutral-400">Auto-école CER Evolution, à deux pas de la gare de Sevran-Beaudottes. Code, conduite et examen : on vous accompagne jusqu'au permis.</p>
+            </div>
+            <div>
+                <h2 class="text-sm font-bold uppercase tracking-wider text-white">Le site</h2>
+                <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors duration-200">Accueil</a></li>
+                        <li><a href="formations.html" class="hover:text-white transition-colors duration-200">Formations</a></li>
+                        <li><a href="tarifs.html" class="hover:text-white transition-colors duration-200">Tarifs</a></li>
+                        <li><a href="planning.html" class="hover:text-white transition-colors duration-200">Planning</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-sm font-bold uppercase tracking-wider text-white">Nous joindre</h2>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 shrink-0 text-brand-400" aria-hidden="true"></i><span>Gare de Sevran Beaudottes<br>93270 Sevran</span></li>
+                    <li class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 shrink-0 text-brand-400" aria-hidden="true"></i><a href="tel:+33188590746" class="hover:text-white transition-colors duration-200">01 88 59 07 46</a></li>
+                    <li class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 shrink-0 text-brand-400" aria-hidden="true"></i><a href="mailto:cer.evolutionsevran@gmail.com" class="break-all hover:text-white transition-colors duration-200">cer.evolutionsevran@gmail.com</a></li>
+                    <li class="flex gap-3"><i data-lucide="clock" class="w-5 h-5 shrink-0 text-brand-400" aria-hidden="true"></i><span>Bureau : mardi–vendredi 14h–19h<br>samedi 10h–14h</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <p class="mx-auto max-w-site px-4 sm:px-6 py-6 text-xs text-neutral-400">&copy; <span data-year>2026</span> CER Evolution Sevran. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
+    <script src="https://unpkg.com/lucide@1.56.0/dist/umd/lucide.min.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
 </body>
 </html>
